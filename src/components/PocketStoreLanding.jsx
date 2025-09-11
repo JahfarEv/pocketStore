@@ -303,7 +303,9 @@
 
 
 import React, { useState } from 'react';
-import { FaGooglePlay, FaStore, FaShoppingCart, FaFilter, FaMapMarkerAlt, FaUsers, FaChartLine, FaCheckCircle, FaUser, FaBars, FaTimes, FaStar } from 'react-icons/fa';
+import { FaGooglePlay, FaStore, FaShoppingCart, FaFilter, FaMapMarkerAlt, FaUsers, FaChartLine, FaCheckCircle, FaUser, FaBars, FaTimes, FaStar, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
+import { BsInstagram } from "react-icons/bs";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const PocketStoreLanding = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -369,10 +371,10 @@ const PocketStoreLanding = () => {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-2xl p-4 transform rotate-3">
                 {/* Replace the div below with your actual image */}
-                <div className="bg-gray-200 rounded-xl w-full h-64 flex items-center justify-center">
+                <div className="bg-gray-200 rounded-xl  flex items-center justify-center">
                   <span className="text-gray-500">
                     {/* Replace this with: <img src="/path/to/pocketStore.png" alt="Pocket Store App" className="rounded-xl" /> */}
-                    <img src="/pocketStore.png" alt="Pocket Store App" className="rounded-xl  h-64 object-cover" />
+                    <img src="/pocketStore.png" alt="Pocket Store App" className="rounded-xl  object-cover" />
                   </span>
                 </div>
               </div>
@@ -664,10 +666,14 @@ const PocketStoreLanding = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition">FB</a>
-                <a href="#" className="text-gray-400 hover:text-white transition">TW</a>
-                <a href="#" className="text-gray-400 hover:text-white transition">IG</a>
-                <a href="#" className="text-gray-400 hover:text-white transition">LI</a>
+                <a href="#" className="text-gray-400 hover:text-white transition"><FaFacebookSquare />
+</a>
+                <a href="#" className="text-gray-400 hover:text-white transition"><FaSquareXTwitter />
+</a>
+                <a href="#" className="text-gray-400 hover:text-white transition"><BsInstagram />
+</a>
+                <a href="#" className="text-gray-400 hover:text-white transition"><FaLinkedin />
+</a>
               </div>
             </div>
           </div>
