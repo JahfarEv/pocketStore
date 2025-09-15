@@ -322,7 +322,7 @@ const PocketStoreLanding = () => {
           <div className="flex justify-between h-16">
             <div className="flex space-x-7">
               <div className="flex items-center">
-                <span className="text-indigo-600 font-bold text-2xl">Pocket Store</span>
+                <span className="text-indigo-600 font-bold text-2xl">PoketStor</span>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-3">
