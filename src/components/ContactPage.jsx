@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 import { BsInstagram } from "react-icons/bs";
 import { FaSquareXTwitter } from "react-icons/fa6";
-
+import Swal from 'sweetalert2';
 const ContactPage = ({ navigateTo }) => {
   const [formData, setFormData] = useState({
     name: '',
@@ -18,17 +18,48 @@ const ContactPage = ({ navigateTo }) => {
     });
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('Form submitted:', formData);
+  //   alert('Thank you for your message! We will get back to you soon.');
+  //   setFormData({
+  //     name: '',
+  //     email: '',
+  //     subject: '',
+  //     message: ''
+  //   });
+  // };
+
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+  e.preventDefault();
+  console.log('Form submitted:', formData);
+  
+  // SweetAlert implementation
+  Swal.fire({
+    title: 'Thank you!',
+    text: 'Your message has been sent successfully. We will get back to you soon.',
+    icon: 'success',
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#3085d6',
+    timer: 3000, // Auto close after 3 seconds
+    timerProgressBar: true,
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  }).then((result) => {
+    // Reset form after alert is closed
     setFormData({
       name: '',
       email: '',
       subject: '',
       message: ''
     });
-  };
+  });
+};
 
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
