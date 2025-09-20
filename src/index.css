@@ -1,2 +1,16 @@
+/* index.css */
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Aparajita';
+  src: url('./assets/fonts/Aparajita.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply Aparajita font to specific elements */
+.font-aparajita {
+  font-family: 'Aparajita', serif;
+}
+
+/* Additional custom styles if needed */
