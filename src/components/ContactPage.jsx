@@ -102,7 +102,7 @@ const ContactPage = ({ navigateTo }) => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+91 9800 123456</p>
                   </div>
                 </div>
                 
@@ -112,7 +112,7 @@ const ContactPage = ({ navigateTo }) => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800">Address</h3>
-                    <p className="text-gray-600">123 Commerce Street, Suite 101<br />San Francisco, CA 94103</p>
+                    <p className="text-gray-600">123 Commerce Street, Suite 101<br />Bangalure, CA 94103</p>
                   </div>
                 </div>
               </div>
