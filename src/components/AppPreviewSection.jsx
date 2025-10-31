@@ -39,7 +39,7 @@ const AppPreviewSection = () => {
           
           <div className="relative">
             <div className="bg-white p-4 rounded-2xl shadow-xl">
-              <img src="/pocketimage.png" alt="Pocket Store App" className="rounded-xl h-96 object-cover mx-auto" />
+              <img src="/aaa2.png" alt="Pocket Store App" className="rounded-xl object-cover mx-auto" />
             </div>
             
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-emerald-100 rounded-full opacity-50 z-0"></div>
