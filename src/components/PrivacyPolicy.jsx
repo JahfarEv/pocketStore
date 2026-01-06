@@ -1,193 +1,213 @@
 import React from "react";
 
+const headingClass =
+  "text-xl font-bold text-blue-600 underline underline-offset-4 text-center";
+
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-800 p-6 md:p-12">
-      <div className="max-w-4xl mx-auto leading-relaxed">
-        <h1 className="text-3xl font-bold mb-6 text-center">
+    <div className="min-h-screen bg-white text-gray-800 px-6 py-10 md:px-12">
+      <div className="max-w-5xl mx-auto space-y-6">
+
+        {/* Main Heading */}
+        <h1 className="text-3xl font-bold text-blue-700 underline underline-offset-4 text-center">
           PoketStor Privacy Policy
         </h1>
-        <p className="text-gray-600 text-sm mb-8 text-center">
-          Effective Date: October 2025
+
+        <p className="text-center text-sm text-gray-500">
+          Effective Date: July-2026
         </p>
 
-        <p className="mb-4">
+        <p>
           At PoketStor, we value the trust you place in us and are committed to
-          protecting your personal information. This Privacy Policy outlines how
-          PoketStor and its affiliates (collectively “PoketStor”, “we”, “our”,
-          “us”) collect, use, share, and safeguard personal data through its
-          website <strong>www.poketstor.com</strong>, mobile applications, and
-          related services (collectively referred to as the “Platform”).
+          protecting your personal information. This Privacy Policy outlines
+          how PoketStor and its affiliates (collectively “PoketStor”, “we”,
+          “our”, “us”) collect, use, share, and safeguard personal data through
+          its website, mobile applications, and related services (collectively
+          referred to as the “Platform”).
         </p>
 
-        <p className="mb-4">
+        <p>
           By accessing or using the Platform, You expressly consent to the terms
           of this Privacy Policy, as well as the applicable Terms of Use. If you
-          do not agree with the terms of this policy, please do not use or
-          access the Platform.
+          do not agree with the terms of this policy, please do not use or access
+          the Platform.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">
-          1. Information Collection
-        </h2>
-        <p className="mb-4">
+        <h2 className="text-xl font-bold mt-5 text-center">
+        1. Information Collection</h2>
+
+        <p>
           We collect and store various types of personal data provided by You
           when You use the Platform, including but not limited to:
         </p>
-        <ul className="list-disc pl-6 mb-4 space-y-1">
-          <li>
-            <strong>Personal Information:</strong> Name, email address, phone
-            number, delivery address, and other similar information.
-          </li>
-          <li>
-            <strong>Transactional Data:</strong> Information related to orders,
-            services, and transactions on the Platform.
-          </li>
-        </ul>
-        <p className="mb-4">
+
+        <p>
+          Personal Information: Name, email address, phone number, business
+          details, delivery address, and other similar information.
+        </p>
+
+        <p>
+          Transactional Data: Information related to subscriptions, orders,
+          services, payments, invoices, and transactions on the Platform.
+        </p>
+
+        <p>
           Some sections of the Platform may be accessed without providing
-          personal data. However, certain services (e.g., placing an order or
-          consuming content) may require You to register and share information.
+          personal data. However, certain services (such as shop registration,
+          subscription activation, order management, or report generation) may
+          require You to register and share information.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">
-          2. Use of Your Information
-        </h2>
-        <p className="mb-4">We use the information we collect to:</p>
-        <ul className="list-disc pl-6 mb-4 space-y-1">
-          <li>Facilitate transactions and deliver products or services.</li>
-          <li>
-            Communicate with You about orders, products, services, and
-            promotional offers.
-          </li>
-          <li>Personalize and improve your experience on the Platform.</li>
-          <li>
-            Detect and protect against fraud, errors, and other criminal
-            activities.
-          </li>
-          <li>Enforce our Terms of Use and related policies.</li>
-          <li>
-            Conduct internal research and analysis to improve our services.
-          </li>
-        </ul>
-        <p className="mb-4">
-          We may use your information for marketing purposes, but You will
-          always have the option to opt-out of such communications.
+        <h2 className="text-xl font-bold mt-5 text-center">
+        2. Use of Your Information</h2>
+
+        <p>We use the information we collect to:</p>
+
+        <p>Facilitate subscriptions, transactions, and deliver Platform services.</p>
+
+        <p>
+          Communicate with You regarding your account, subscriptions, invoices,
+          orders, and service updates.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">
-          3. Sharing of Information
-        </h2>
-        <p className="mb-4">
-          We may share your personal data with the following:
-        </p>
-        <ul className="list-disc pl-6 mb-4 space-y-1">
-          <li>
-            <strong>Affiliates and Third Parties:</strong> For purposes such as
-            order fulfillment, payment processing, and improving customer
-            experience.
-          </li>
-          <li>
-            <strong>Business Partners:</strong> For the delivery of certain
-            services or products, such as logistics providers or financial
-            institutions.
-          </li>
-          <li>
-            <strong>Legal Authorities:</strong> In response to legal
-            obligations, court orders, or requests from law enforcement
-            agencies.
-          </li>
-        </ul>
-        <p className="mb-4">
-          We do not sell or rent your personal data to third parties for their
-          marketing purposes without your explicit consent.
+        <p>Personalize and improve your experience on the Platform.</p>
+
+        <p>
+          Detect, prevent, and protect against fraud, errors, and other unlawful
+          activities.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">4. Data Retention</h2>
-        <p className="mb-4">
-          We retain personal data for as long as necessary to fulfill the
-          purposes outlined in this Privacy Policy or as required by law.
+        <p>Enforce our Terms of Use and related policies.</p>
+
+        <p>
+          Conduct internal research and analytics to improve our products and
+          services.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">5. Security Measures</h2>
-        <p className="mb-4">
-          We employ reasonable security measures to protect your personal
-          information from unauthorized access, misuse, or disclosure. However,
-          given the nature of the internet, we cannot fully guarantee complete
-          security of data transmitted online.
+        <p>
+          We may use your information for marketing or promotional purposes. You
+          will always have the option to opt out of such communications.
         </p>
-        <p className="mb-4">
+
+        <h2 className="text-xl font-bold mt-5 text-center">
+        3. Sharing of Information</h2>
+
+        <p>We may share your personal data with:</p>
+
+        <p>
+          Affiliates and Third Parties: For purposes such as payment processing,
+          subscription management, notification services, and customer support.
+        </p>
+
+        <p>
+          Business Partners: Including technology providers, payment gateways,
+          logistics partners, or financial institutions where required to
+          deliver services.
+        </p>
+
+        <p>
+          Legal Authorities: When required by law, regulation, court order, or
+          government request.
+        </p>
+
+        <p>
+          PoketStor does not sell or rent your personal data to third parties for
+          their independent marketing purposes without your explicit consent.
+        </p>
+
+        <h2 className="text-xl font-bold mt-5 text-center">
+        4. Data Retention</h2>
+
+        <p>
+          We retain personal data only for as long as necessary to fulfill the
+          purposes outlined in this Privacy Policy, or as required under
+          applicable laws and regulations.
+        </p>
+
+        <h2 className="text-xl font-bold mt-5 text-center">
+        5. Security Measures</h2>
+
+        <p>
+          We implement reasonable administrative, technical, and physical
+          security measures to protect your personal information from
+          unauthorized access, misuse, alteration, or disclosure. However, due
+          to the nature of internet-based services, complete security cannot be
+          guaranteed.
+        </p>
+
+        <p>
           You are responsible for maintaining the confidentiality of your
-          account credentials and for all activities that occur under your
+          account credentials and for all activities carried out under your
           account.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">6. Your Rights</h2>
-        <ul className="list-disc pl-6 mb-4 space-y-1">
-          <li>
-            <strong>Access and Update:</strong> You can access and update your
-            personal data through your account settings.
-          </li>
-          <li>
-            <strong>Opt-out:</strong> You may opt-out of receiving non-essential
-            (promotional) communications at any time.
-          </li>
-          <li>
-            <strong>Withdraw Consent:</strong> You may withdraw your consent to
-            data processing by contacting us. However, this may restrict your
-            ability to access certain services.
-          </li>
-        </ul>
+        <h2 className="text-xl font-bold mt-5 text-center">
+        6. Your Rights</h2>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">7. Third-Party Links</h2>
-        <p className="mb-4">
-          Our Platform may contain links to third-party websites or
-          applications. We are not responsible for the privacy practices of such
-          external sites, and we recommend reviewing their privacy policies
-          before providing any personal data.
+        <p>
+          Access and Update: Review and update your personal information through
+          your account settings.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">
-          8. Changes to the Privacy Policy
-        </h2>
-        <p className="mb-4">
-          We may update this Privacy Policy from time to time to reflect changes
-          in our practices or legal requirements. We will notify You of any
-          significant changes by updating the "Effective Date" and, if
-          necessary, providing additional notifications.
+        <p>
+          Opt-out: Unsubscribe from non-essential or promotional communications
+          at any time.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">
-          9. Contact Information
-        </h2>
-        <p className="mb-4">
-          For any questions or concerns regarding this Privacy Policy or to
-          exercise your rights related to your personal data, please contact us
-          at:
+        <p>
+          Withdraw Consent: Withdraw consent for data processing by contacting
+          us. Please note that withdrawing consent may limit your ability to
+          use certain features of the Platform.
         </p>
-        <p className="mb-4">
-          <strong>Email:</strong>{" "}
+
+        <h2 className="text-xl font-bold mt-5 text-center">
+        7. Third-Party Links</h2>
+
+        <p>
+          The Platform may contain links to third-party websites or services.
+          PoketStor is not responsible for the privacy practices of such
+          external platforms.
+        </p>
+
+        <h2 className="text-xl font-bold mt-5 text-center">
+        8. Changes to the Privacy Policy</h2>
+
+        <p>
+          We may update this Privacy Policy periodically to reflect changes in
+          our practices, technology, or legal requirements. Continued use of
+          the Platform after such updates constitutes acceptance of the revised
+          policy.
+        </p>
+
+        <h2 className="text-xl font-bold mt-5 text-center">
+        9. Contact Information</h2>
+
+        <p>
+          If you have any questions, concerns, or requests related to this
+          Privacy Policy or your personal data, you may contact us at:
+        </p>
+
+        <p>
+          Email:{" "}
           <a
             href="mailto:poketstormail@gmail.com"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 underline"
           >
             poketstormail@gmail.com
           </a>
         </p>
 
-        <h2 className="text-2xl font-semibold mt-8 mb-4">10. Consent</h2>
-        <p className="mb-4">
-          By using the Platform, You consent to the collection, use, sharing,
-          and processing of your personal data as described in this Privacy
-          Policy. If you provide information relating to others, you confirm
-          that you have their consent to do so.
-        </p>
+        <h2 className="text-xl font-bold mt-5 text-center">
+        10. Consent</h2>
 
         <p>
-          This Privacy Policy is designed to be compliant with applicable data
-          protection laws and ensure that PoketStor processes your information
-          securely and responsibly.
+          By using the Platform, You consent to the collection, use, sharing,
+          and processing of your personal data as described in this Privacy
+          Policy. If You provide personal information relating to another
+          individual or business, You confirm that You have obtained their
+          consent to do so.
         </p>
+
       </div>
     </div>
   );
