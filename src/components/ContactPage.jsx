@@ -64,8 +64,8 @@ const ContactPage = ({ navigateTo }) => {
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       {/* Contact Header */}
-      <section className="py-12 bg-indigo-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-indigo-600 py-5">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
           <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">
             Have questions or need support? We'd love to hear from you.
@@ -92,10 +92,10 @@ const ContactPage = ({ navigateTo }) => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800">Email</h3>
-                    <p className="text-gray-600">support@pocketstore.com</p>
+                    <p className="text-gray-600">support@poketstor.com</p>
                   </div>
                 </div>
-                
+{/*                 
                 <div className="flex items-start">
                   <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mr-4">
                     <FaPhone />
@@ -105,14 +105,15 @@ const ContactPage = ({ navigateTo }) => {
                     <p className="text-gray-600">+91 9800 123456</p>
                   </div>
                 </div>
-                
+                 */}
                 <div className="flex items-start">
                   <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mr-4">
                     <FaMapMarkerAlt />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800">Address</h3>
-                    <p className="text-gray-600">123 Commerce Street, Suite 101<br />Bangalure, CA 94103</p>
+                     
+                    <p className="text-gray-600">NEXUS VENTURES LLC,  2nd Floor,<br/> Flat No.: 235, Binnamangala, Indiranagar,<br />Bengaluru, 560038</p>
                   </div>
                 </div>
               </div>

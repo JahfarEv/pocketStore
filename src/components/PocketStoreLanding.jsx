@@ -40,6 +40,7 @@ const PocketStoreApp = () => {
             <UserTypesSection />
             <AppPreviewSection />
             <DownloadSection />
+            
           </>
         );
     }

@@ -192,7 +192,7 @@ const Footer = ({ navigateTo }) => {
 
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Pocket Store</h3>
+            <h3 className="text-xl font-bold mb-4">Poket Store</h3>
             <p className="text-gray-400">
               The ultimate multi-user shopping platform connecting customers and shops.
             </p>
