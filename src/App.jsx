@@ -21,7 +21,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<PocketStoreLanding />} />
-        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
