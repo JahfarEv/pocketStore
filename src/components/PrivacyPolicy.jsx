@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
         </h1>
 
         <p className="text-center text-sm text-gray-500">
-          Effective Date: July-2026
+          Effective Date: January-2026
         </p>
 
         <p>
