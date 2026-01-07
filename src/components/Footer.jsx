@@ -230,7 +230,7 @@ const Footer = ({ navigateTo }) => {
                 </button>
               </li>
               <li>
-                <button onClick={() => navigate("/privacypolicy")} className="text-gray-400 hover:text-white transition">
+                <button onClick={() => navigate("/privacy-policy")} className="text-gray-400 hover:text-white transition">
                   Privacy Policy
                 </button>
               </li>
