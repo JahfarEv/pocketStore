@@ -8,13 +8,13 @@
 
 // export default App;
 
-
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import PocketStoreLanding from "./components/PocketStoreLanding";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndCondition";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<PocketStoreLanding />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-                <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
     </Router>
   );

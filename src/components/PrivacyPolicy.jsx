@@ -1,8 +1,5 @@
 import React from "react";
 
-const headingClass =
-  "text-xl font-bold text-blue-600 underline underline-offset-4 text-center";
-
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 px-6 py-10 md:px-12">
@@ -10,203 +7,181 @@ const PrivacyPolicy = () => {
 
         {/* Main Heading */}
         <h1 className="text-3xl font-bold text-blue-700 underline underline-offset-4 text-center">
-          PoketStor Privacy Policy
+          Privacy Policy
         </h1>
 
         <p className="text-center text-sm text-gray-500">
-          Effective Date: January-2026
+          Effective Date: January 7, 2026
         </p>
 
         <p>
-          At PoketStor, we value the trust you place in us and are committed to
-          protecting your personal information. This Privacy Policy outlines
-          how PoketStor and its affiliates (collectively “PoketStor”, “we”,
-          “our”, “us”) collect, use, share, and safeguard personal data through
-          its website, mobile applications, and related services (collectively
-          referred to as the “Platform”).
+          Nexus Ventures LLC (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;)
+          operates the PoketStor mobile application (&quot;Service&quot;). This
+          Privacy Policy explains how we collect, use, and protect personal data
+          when you use our Service and the choices available to you regarding
+          your data.
         </p>
 
+        {/* 1 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          1. Information Collection and Use
+        </h2>
+
         <p>
-          By accessing or using the Platform, You expressly consent to the terms
-          of this Privacy Policy, as well as the applicable Terms of Use. If you
-          do not agree with the terms of this policy, please do not use or access
-          the Platform.
+          We collect different types of information to provide and improve our
+          Service.
         </p>
 
-        <h2 className="text-xl font-bold mt-5 text-center">
-        1. Information Collection</h2>
-
+        <p className="font-semibold">Personal Data</p>
         <p>
-          We collect and store various types of personal data provided by You
-          when You use the Platform, including but not limited to:
+          While using our Service, we may collect personally identifiable
+          information including:
         </p>
 
+        <ul className="list-disc pl-6">
+          <li>Email address</li>
+          <li>First name and last name</li>
+          <li>Phone number</li>
+          <li>Address, State, Province, ZIP/Postal code, City</li>
+        </ul>
+
+        <p className="font-semibold mt-4">Location Data</p>
         <p>
-          Personal Information: Name, email address, phone number, business
-          details, delivery address, and other similar information.
+          We may collect approximate or precise location information, only with
+          your consent, to enable core app functionality such as:
         </p>
 
+        <ul className="list-disc pl-6">
+          <li>Showing nearby shops and products</li>
+          <li>Enabling location-based search and discovery</li>
+          <li>Improving accuracy of service availability</li>
+        </ul>
+
         <p>
-          Transactional Data: Information related to subscriptions, orders,
-          services, payments, invoices, and transactions on the Platform.
+          You can allow or deny location access at any time through your device
+          settings. PoketStor does not sell or rent location data.
         </p>
 
+        <p className="font-semibold mt-4">Shop Information</p>
         <p>
-          Some sections of the Platform may be accessed without providing
-          personal data. However, certain services (such as shop registration,
-          subscription activation, order management, or report generation) may
-          require You to register and share information.
+          For registered shops, we collect shop names, descriptions, product
+          images, pricing details, and business-related information necessary to
+          operate the Service.
         </p>
 
-        <h2 className="text-xl font-bold mt-5 text-center">
-        2. Use of Your Information</h2>
+        {/* 2 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          2. Subscription and Payments
+        </h2>
 
-        <p>We use the information we collect to:</p>
-
-        <p>Facilitate subscriptions, transactions, and deliver Platform services.</p>
-
+        <p className="font-semibold">For Shops</p>
         <p>
-          Communicate with You regarding your account, subscriptions, invoices,
-          orders, and service updates.
+          We charge subscription and renewal fees (including applicable taxes).
+          Payments are processed securely through third-party payment gateways.
+          PoketStor does not store card or payment credentials.
         </p>
 
-        <p>Personalize and improve your experience on the Platform.</p>
-
+        <p className="font-semibold mt-3">For Users</p>
         <p>
-          Detect, prevent, and protect against fraud, errors, and other unlawful
-          activities.
+          The application is free for general users to browse shops and
+          products.
         </p>
 
-        <p>Enforce our Terms of Use and related policies.</p>
-
+        <p className="font-semibold mt-3">Direct Transactions</p>
         <p>
-          Conduct internal research and analytics to improve our products and
-          services.
+          PoketStor is a discovery platform. All product payments are made
+          directly between customers and shop owners. PoketStor does not
+          process or manage product purchase transactions.
         </p>
 
+        {/* 3 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          3. Cookies and Tracking Technologies
+        </h2>
+
         <p>
-          We may use your information for marketing or promotional purposes. You
-          will always have the option to opt out of such communications.
+          We may use cookies or similar technologies to improve Service
+          functionality and user experience. You can control cookie usage
+          through your browser or device settings.
         </p>
 
-        <h2 className="text-xl font-bold mt-5 text-center">
-        3. Sharing of Information</h2>
+        {/* 4 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          4. Use of Data
+        </h2>
 
-        <p>We may share your personal data with:</p>
+        <ul className="list-disc pl-6">
+          <li>Provide and maintain the Service</li>
+          <li>Enable shop listings and location-based discovery</li>
+          <li>Notify users of service updates</li>
+          <li>Provide customer support</li>
+          <li>Monitor usage and improve performance</li>
+          <li>Ensure platform security and prevent misuse</li>
+        </ul>
 
+        {/* 5 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          5. Data Security and Sharing
+        </h2>
+
+        <p className="font-semibold">No Sale of Personal Data</p>
         <p>
-          Affiliates and Third Parties: For purposes such as payment processing,
-          subscription management, notification services, and customer support.
+          Nexus Ventures LLC does not sell, trade, or rent personal data or
+          location data to third parties for marketing purposes.
         </p>
 
+        <p className="font-semibold mt-3">Security</p>
         <p>
-          Business Partners: Including technology providers, payment gateways,
-          logistics partners, or financial institutions where required to
-          deliver services.
+          We implement reasonable technical and organizational safeguards to
+          protect your data. However, no internet-based system can be guaranteed
+          to be completely secure.
         </p>
 
+        {/* 6 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          6. Service Providers
+        </h2>
+
         <p>
-          Legal Authorities: When required by law, regulation, court order, or
-          government request.
+          We may use trusted third-party service providers (such as payment
+          processors for subscriptions or hosting providers). These providers
+          access data only to perform services on our behalf and are
+          contractually obligated to protect it.
         </p>
 
-        <p>
-          PoketStor does not sell or rent your personal data to third parties for
-          their independent marketing purposes without your explicit consent.
-        </p>
-
-        <h2 className="text-xl font-bold mt-5 text-center">
-        4. Data Retention</h2>
+        {/* 7 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          7. Changes to This Privacy Policy
+        </h2>
 
         <p>
-          We retain personal data only for as long as necessary to fulfill the
-          purposes outlined in this Privacy Policy, or as required under
-          applicable laws and regulations.
-        </p>
-
-        <h2 className="text-xl font-bold mt-5 text-center">
-        5. Security Measures</h2>
-
-        <p>
-          We implement reasonable administrative, technical, and physical
-          security measures to protect your personal information from
-          unauthorized access, misuse, alteration, or disclosure. However, due
-          to the nature of internet-based services, complete security cannot be
-          guaranteed.
-        </p>
-
-        <p>
-          You are responsible for maintaining the confidentiality of your
-          account credentials and for all activities carried out under your
-          account.
-        </p>
-
-        <h2 className="text-xl font-bold mt-5 text-center">
-        6. Your Rights</h2>
-
-        <p>
-          Access and Update: Review and update your personal information through
-          your account settings.
-        </p>
-
-        <p>
-          Opt-out: Unsubscribe from non-essential or promotional communications
-          at any time.
-        </p>
-
-        <p>
-          Withdraw Consent: Withdraw consent for data processing by contacting
-          us. Please note that withdrawing consent may limit your ability to
-          use certain features of the Platform.
-        </p>
-
-        <h2 className="text-xl font-bold mt-5 text-center">
-        7. Third-Party Links</h2>
-
-        <p>
-          The Platform may contain links to third-party websites or services.
-          PoketStor is not responsible for the privacy practices of such
-          external platforms.
-        </p>
-
-        <h2 className="text-xl font-bold mt-5 text-center">
-        8. Changes to the Privacy Policy</h2>
-
-        <p>
-          We may update this Privacy Policy periodically to reflect changes in
-          our practices, technology, or legal requirements. Continued use of
-          the Platform after such updates constitutes acceptance of the revised
+          We may update this Privacy Policy periodically. Changes will be posted
+          on this page, and the Effective Date will be updated accordingly.
+          Continued use of the Service constitutes acceptance of the revised
           policy.
         </p>
 
-        <h2 className="text-xl font-bold mt-5 text-center">
-        9. Contact Information</h2>
+        {/* 8 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          8. Contact Us
+        </h2>
 
         <p>
-          If you have any questions, concerns, or requests related to this
-          Privacy Policy or your personal data, you may contact us at:
+          If you have questions or concerns about this Privacy Policy, contact
+          us at:
         </p>
 
         <p>
-          Email:{" "}
+          📧 Email:{" "}
           <a
             href="mailto:poketstormail@gmail.com"
             className="text-blue-600 underline"
           >
-            poketstormail@gmail.com
+            support@poketstor.com
           </a>
         </p>
 
-        <h2 className="text-xl font-bold mt-5 text-center">
-        10. Consent</h2>
-
-        <p>
-          By using the Platform, You consent to the collection, use, sharing,
-          and processing of your personal data as described in this Privacy
-          Policy. If You provide personal information relating to another
-          individual or business, You confirm that You have obtained their
-          consent to do so.
-        </p>
+        <p>🏢 Company: Nexus Ventures LLC</p>
 
       </div>
     </div>
