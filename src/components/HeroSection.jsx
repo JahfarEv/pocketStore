@@ -3,7 +3,7 @@ import { FaGooglePlay, FaUsers } from "react-icons/fa";
 
 const HeroSection = ({ navigateTo }) => {
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-indigo-600">
+    <section className="pt-5 pb-20 md:pt-40 md:pb-28 bg-indigo-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
