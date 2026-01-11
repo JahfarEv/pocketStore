@@ -1,6 +1,3 @@
-
-
-
 import { useState } from "react";
 
 export default function CareerSalesman() {
@@ -30,24 +27,21 @@ export default function CareerSalesman() {
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-10">
       <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10 space-y-8">
-
         {/* Header */}
         <div className="text-center space-y-2 border-b pb-6">
           <h1 className="text-3xl font-bold text-blue-700">
             Join the PoketStor Sales Team
           </h1>
-          <p className="text-gray-600 text-lg">
-            Empower Local Businesses
-          </p>
+          <p className="text-gray-600 text-lg">Empower Local Businesses</p>
         </div>
 
         {/* Introduction */}
         <section className="space-y-3">
           <p className="text-gray-700 leading-relaxed">
-           <span className="font-bold">PoketStor</span>  is a mobile application designed to help local merchants
-            sell products and services online to their neighbourhood customers.
-            Merchants can list their shops and products through monthly or yearly
-            subscription plans.
+            <span className="font-bold">PoketStor</span> is a mobile application
+            designed to help local merchants to sell their products and services
+            online to their neighbourhood customers. Merchants can list their
+            shops and products through monthly or yearly subscription plans.
           </p>
         </section>
 
@@ -90,7 +84,7 @@ export default function CareerSalesman() {
               </div>
             </li>
             <li>
-              <strong>Yearly Plan:</strong> ₹1100 + GST 
+              <strong>Yearly Plan:</strong> ₹1100 + GST
               <div className="text-sm text-gray-600">
                 Pay for 11 months and get 14 months for the first subscription.
                 Every subsequent renewal gets 12 months for the price of 11.
@@ -104,7 +98,8 @@ export default function CareerSalesman() {
           <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
             Earning Potential (Commission Structure)
           </h2>
-We offer a high-reward commission model where you earn from both New Sales and Renewals.
+          We offer a high-reward commission model where you earn from both New
+          Sales and Renewals.
           {/* Sales Executive */}
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-blue-700">
@@ -129,7 +124,6 @@ We offer a high-reward commission model where you earn from both New Sales and R
               </div>
             </div>
           </div>
-
           {/* Sales Manager */}
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-blue-700">
@@ -162,7 +156,17 @@ We offer a high-reward commission model where you earn from both New Sales and R
 
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
-              <strong>Exponential Income:</strong> If you work hard with your talent, sincerity, and the concept of a decent job, miracles will happen in your income in a few months. Just by marketing the PoketStor application, you can earn lakhs of rupees per month. For example, even if you are an executive who has sold only 4000 monthly plans in six months, you will get a renewal commission of Rs. 80,000 each month. In addition, you will get commission for the sales you made that month. As shops renew every month, your sales will increase, so the commission you get will increase every month. Since you also sell annual plans, you will get a big commission every month.
+              <strong>Exponential Income:</strong> With your skills, sincerity,
+              and a dignified work ethic, you can achieve remarkable growth in
+              your income within a few months. By simply marketing the PoketStor
+              application, it's possible to earn lakhs of rupees per month. For
+              instance, if you're an executive who has sold just 4000 monthly
+              plans in six months, you'll receive a renewal commission of Rs.
+              80,000 per month, not to mention the commission from the sales you
+              made during that month. As shops renew every month and your sales
+              continue to grow, your commission will keep increasing. With
+              annual plans, you'll receive an even larger commission every
+              month.
             </li>
             <li>
               <strong>Transparency:</strong> Commissions are credited directly
@@ -178,7 +182,9 @@ We offer a high-reward commission model where you earn from both New Sales and R
           </h2>
 
           <p className="text-gray-700">
-            A minimum of five sales per month is required to remain eligible for full benefits and team commissions. Those who do not meet this requirement will receive only their sales commission.
+            A minimum of five sales per month is required to remain eligible for
+            full benefits and team commissions. Those who do not meet this
+            requirement will receive only their sales commission.
           </p>
         </section>
 
@@ -219,54 +225,52 @@ We offer a high-reward commission model where you earn from both New Sales and R
 
       {/* GUIDE MODAL */}
       {showGuide && (
-<div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50">
-  <div className="bg-white w-full max-w-lg rounded-xl shadow-lg p-6 space-y-5">
+        <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-lg rounded-xl shadow-lg p-6 space-y-5">
+            <h3 className="text-xl font-bold text-gray-800 text-center">
+              Application Instructions
+            </h3>
 
-    <h3 className="text-xl font-bold text-gray-800 text-center">
-      Application Instructions
-    </h3>
+            <ol className="list-decimal list-inside text-gray-700 space-y-2">
+              <li>Download the Sales Executive Application Form.</li>
+              <li>Fill in all required details clearly.</li>
+              <li>Attach a recent passport size photograph.</li>
+              <li>Sign the form after completing all fields.</li>
+              <li>Scan the completed form.</li>
+              <li>
+                Send the scanned copy to
+                <span className="font-semibold text-blue-600">
+                  {" "}
+                  career@poketstor.com
+                </span>
+              </li>
+            </ol>
 
-    <ol className="list-decimal list-inside text-gray-700 space-y-2">
-      <li>Download the Sales Executive Application Form.</li>
-      <li>Fill in all required details clearly.</li>
-      <li>Attach a recent passport size photograph.</li>
-      <li>Sign the form after completing all fields.</li>
-      <li>Scan the completed form.</li>
-      <li>
-        Send the scanned copy to
-        <span className="font-semibold text-blue-600">
-          {" "}career@poketstor.com
-        </span>
-      </li>
-    </ol>
+            <div className="text-center pt-4">
+              <button
+                onClick={handleDownload}
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold"
+              >
+                Download Application Form
+              </button>
+            </div>
 
-    <div className="text-center pt-4">
-      <button
-        onClick={handleDownload}
-        className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold"
-      >
-        Download Application Form
-      </button>
-    </div>
+            {downloaded && (
+              <p className="text-center text-green-600 font-semibold">
+                ✅ Form downloaded successfully
+              </p>
+            )}
 
-    {downloaded && (
-      <p className="text-center text-green-600 font-semibold">
-        ✅ Form downloaded successfully
-      </p>
-    )}
-
-    <div className="text-center pt-2">
-      <button
-        onClick={() => setShowGuide(false)}
-        className="text-gray-500 underline text-sm"
-      >
-        Close
-      </button>
-    </div>
-
-  </div>
-</div>
-
+            <div className="text-center pt-2">
+              <button
+                onClick={() => setShowGuide(false)}
+                className="text-gray-500 underline text-sm"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
