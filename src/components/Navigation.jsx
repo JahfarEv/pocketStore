@@ -334,9 +334,11 @@ const Navigation = ({ currentPage, navigateTo, isMenuOpen, toggleMenu }) => {
           {/* Logo */}
           <div
             onClick={() => navigateTo("home")}
-            className="text-white font-bold text-4xl font-aparajita cursor-pointer"
+            className="text-white font-bold text-5xl font-aparajita cursor-pointer
+  drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]
+  animate-[pulse_2s_ease-in-out_infinite]"
           >
-            Poket<span className="text-yellow-400">Stor</span>
+            Poket<span className="text-yellow-200">Stor</span>
           </div>
 
           {/* Desktop Navigation */}

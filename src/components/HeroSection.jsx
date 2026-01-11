@@ -39,7 +39,7 @@ const HeroSection = ({ navigateTo }) => {
               className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition flex items-center justify-center w-full sm:w-auto"
             >
               <FaUsers className="text-xl mr-3" />
-              Join Our Team
+              Grow With Us
             </button>
           </div>
 

@@ -1,147 +1,281 @@
-import React, { useState } from "react";
 
-const CareersPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    position: "",
-    experience: "",
-    message: "",
-    resume: null,
-  });
 
-  const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: files ? files[0] : value,
-    }));
+
+import { useState } from "react";
+
+export default function CareerSalesman() {
+  const [agreed, setAgreed] = useState(false);
+  const [showGuide, setShowGuide] = useState(false);
+  const [downloaded, setDownloaded] = useState(false);
+
+  const handleInterested = () => {
+    if (!agreed) {
+      alert("Please accept the agreement checkbox first.");
+      return;
+    }
+    setShowGuide(true);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
-    // You can add API call here
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/agreement/PoketStor Career.pdf";
+    link.download = "PoketStor Career.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setDownloaded(true);
   };
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Join Our Team
+    <div className="min-h-screen bg-gray-50 px-4 py-10">
+      <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 md:p-10 space-y-8">
+
+        {/* Header */}
+        <div className="text-center space-y-2 border-b pb-6">
+          <h1 className="text-3xl font-bold text-blue-700">
+            Join the PocketStor Sales Team
           </h1>
-          <p className="text-xl text-gray-600">
-            We're always looking for talented individuals to join our journey
+          <p className="text-gray-600 text-lg">
+            Empower Local Businesses
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Introduction */}
+        <section className="space-y-3">
+          <p className="text-gray-700 leading-relaxed">
+           <span className="font-bold">PocketStor</span>  is a mobile application designed to help local merchants
+            sell products and services online to their neighbourhood customers.
+            Merchants can list their shops and products through monthly or yearly
+            subscription plans.
+          </p>
+        </section>
+
+        {/* How It Works */}
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+            How It Works
+          </h2>
+
+          <ul className="list-disc list-inside space-y-2 text-gray-700">
+            <li>
+              <strong>For Customers:</strong> The app is free to use. Based on
+              their live PIN code or location, customers can view nearby shops
+              and order products instantly. They can also search businesses
+              across India.
+            </li>
+            <li>
+              <strong>For Merchants:</strong> Shops receive order notifications
+              and manage delivery directly, collecting payments from customers.
+            </li>
+            <li>
+              <strong>Your Role:</strong> As a Sales Executive, your main
+              responsibility is onboarding shops onto the PocketStor platform
+              through subscription sales.
+            </li>
+          </ul>
+        </section>
+
+        {/* Subscription Plans */}
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+            Subscription Plans & Offers
+          </h2>
+
+          <ol className="list-decimal list-inside space-y-3 text-gray-700">
+            <li>
+              <strong>Monthly Plan:</strong> ₹100 + GST
+              <div className="text-sm text-gray-600">
+                Special Offer: Get 3 months for the first subscription
+              </div>
+            </li>
+            <li>
+              <strong>Yearly Plan:</strong> ₹1100 + GST 
+              <div className="text-sm text-gray-600">
+                Pay for 11 months and get 14 months for the first subscription.
+                Every subsequent renewal gets 12 months for the price of 11.
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        {/* Commission Structure */}
+        <section className="space-y-6">
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+            Earning Potential (Commission Structure)
+          </h2>
+We offer a high-reward commission model where you earn from both New Sales and Renewals.
+          {/* Sales Executive */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-blue-700">
+              Sales Executive Commission
+            </h3>
+
+            <div className="pl-4 space-y-3 text-gray-700">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  required
-                />
+                <p className="font-medium">Monthly Plan</p>
+                <ul className="list-disc list-inside ml-4">
+                  <li>New Installation: 40%</li>
+                  <li>Monthly Renewal: 20%</li>
+                </ul>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  required
-                />
+                <p className="font-medium">Yearly Plan</p>
+                <ul className="list-disc list-inside ml-4">
+                  <li>New Installation: 40% + 10 * 20%</li>
+                  <li>Yearly Renewal: 20%</li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  required
-                />
-              </div>
+          {/* Sales Manager */}
+          <div className="space-y-3">
+            <h3 className="text-lg font-semibold text-blue-700">
+              Sales Manager Commission (Promotion Based)
+            </h3>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Position Applied For
-                </label>
-                <select
-                  name="position"
-                  value={formData.position}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                  required
-                >
-                  <option value="">Select a position</option>
-                  <option value="salesman">Salesman</option>
-                  <option value="salesmanager">Sales Manager</option>
-                </select>
-              </div>
-            </div>
+            <p className="text-gray-700">
+              High-performing Sales Executives will be promoted to Sales
+              Managers. Managers can build their own team across India.
+            </p>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Cover Letter
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows="4"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                placeholder="Tell us why you'd like to join our team..."
-              />
-            </div>
+            <ul className="list-disc list-inside ml-4 text-gray-700 space-y-2">
+              <li>Direct Sales: Same commission as Sales Executives</li>
+              <li>
+                <strong>Team Performance (Override Commission):</strong>
+                <ul className="list-disc list-inside ml-6 mt-1">
+                  <li>Monthly Plan: 10% per new sale | 5% per renewal</li>
+                  <li>Yearly Plan: 10% per new sale | 5% per renewal</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Upload Resume
-              </label>
-              <input
-                type="file"
-                name="resume"
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                accept=".pdf,.doc,.docx"
-                required
-              />
-            </div>
+        {/* Why Join */}
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+            Why Join PocketStor?
+          </h2>
 
-            <button
-              type="submit"
-              className="w-full bg-indigo-600 text-white font-semibold py-4 px-6 rounded-lg hover:bg-indigo-700 transition duration-300"
-            >
-              Submit Application
-            </button>
-          </form>
+          <ul className="list-disc list-inside space-y-2 text-gray-700">
+            <li>
+              <strong>Exponential Income:</strong> Onboarding 4,000 shops on a
+              monthly plan over six months can generate ₹80,000 per month from
+              renewals alone.
+            </li>
+            <li>
+              <strong>Growth:</strong> Get promoted to a managerial role with
+              unlimited recruitment authority.
+            </li>
+            <li>
+              <strong>Transparency:</strong> Commissions are credited directly
+              to your bank account by the 5th of every month.
+            </li>
+          </ul>
+        </section>
+
+        {/* Terms */}
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2 ">
+            Terms & Conditions
+          </h2>
+
+          <p className="text-gray-700">
+            A minimum of five sales per month is required to remain eligible for
+            full benefits and team commissions. Those who do not meet this
+            requirement will receive only their basic sales commission.
+          </p>
+        </section>
+
+        {/* Agreement Checkbox */}
+        <section className="border rounded-lg p-4 bg-gray-50">
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">
+            Sales Executive Agreement
+          </h2>
+
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              id="agree"
+              checked={agreed}
+              onChange={(e) => setAgreed(e.target.checked)}
+              className="w-4 h-4"
+            />
+            <label htmlFor="agree" className="text-gray-700 text-sm">
+              I have read and agree to the Sales Executive Agreement
+            </label>
+          </div>
+        </section>
+
+        {/* Interested Button */}
+        <div className="text-center">
+          <button
+            onClick={handleInterested}
+            className={`px-8 py-3 rounded-lg font-semibold text-white transition ${
+              agreed
+                ? "bg-blue-600 hover:bg-blue-700"
+                : "bg-gray-400 cursor-not-allowed"
+            }`}
+          >
+            I’m Interested
+          </button>
         </div>
       </div>
-    </section>
-  );
-};
 
-export default CareersPage;
+      {/* GUIDE MODAL */}
+      {showGuide && (
+<div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50">
+  <div className="bg-white w-full max-w-lg rounded-xl shadow-lg p-6 space-y-5">
+
+    <h3 className="text-xl font-bold text-gray-800 text-center">
+      Application Instructions
+    </h3>
+
+    <ol className="list-decimal list-inside text-gray-700 space-y-2">
+      <li>Download the Sales Executive Application Form.</li>
+      <li>Fill in all required details clearly.</li>
+      <li>Attach a recent passport size photograph.</li>
+      <li>Sign the form after completing all fields.</li>
+      <li>Scan the completed form.</li>
+      <li>
+        Send the scanned copy to
+        <span className="font-semibold text-blue-600">
+          {" "}career@poketstor.com
+        </span>
+      </li>
+    </ol>
+
+    <div className="text-center pt-4">
+      <button
+        onClick={handleDownload}
+        className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold"
+      >
+        Download Application Form
+      </button>
+    </div>
+
+    {downloaded && (
+      <p className="text-center text-green-600 font-semibold">
+        ✅ Form downloaded successfully
+      </p>
+    )}
+
+    <div className="text-center pt-2">
+      <button
+        onClick={() => setShowGuide(false)}
+        className="text-gray-500 underline text-sm"
+      >
+        Close
+      </button>
+    </div>
+
+  </div>
+</div>
+
+      )}
+    </div>
+  );
+}
