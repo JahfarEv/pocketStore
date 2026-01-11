@@ -34,7 +34,7 @@ export default function CareerSalesman() {
         {/* Header */}
         <div className="text-center space-y-2 border-b pb-6">
           <h1 className="text-3xl font-bold text-blue-700">
-            Join the PocketStor Sales Team
+            Join the PoketStor Sales Team
           </h1>
           <p className="text-gray-600 text-lg">
             Empower Local Businesses
@@ -44,7 +44,7 @@ export default function CareerSalesman() {
         {/* Introduction */}
         <section className="space-y-3">
           <p className="text-gray-700 leading-relaxed">
-           <span className="font-bold">PocketStor</span>  is a mobile application designed to help local merchants
+           <span className="font-bold">PoketStor</span>  is a mobile application designed to help local merchants
             sell products and services online to their neighbourhood customers.
             Merchants can list their shops and products through monthly or yearly
             subscription plans.
@@ -162,13 +162,7 @@ We offer a high-reward commission model where you earn from both New Sales and R
 
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
-              <strong>Exponential Income:</strong> Onboarding 4,000 shops on a
-              monthly plan over six months can generate ₹80,000 per month from
-              renewals alone.
-            </li>
-            <li>
-              <strong>Growth:</strong> Get promoted to a managerial role with
-              unlimited recruitment authority.
+              <strong>Exponential Income:</strong> If you work hard with your talent, sincerity, and the concept of a decent job, miracles will happen in your income in a few months. Just by marketing the PoketStor application, you can earn lakhs of rupees per month. For example, even if you are an executive who has sold only 4000 monthly plans in six months, you will get a renewal commission of Rs. 80,000 each month. In addition, you will get commission for the sales you made that month. As shops renew every month, your sales will increase, so the commission you get will increase every month. Since you also sell annual plans, you will get a big commission every month.
             </li>
             <li>
               <strong>Transparency:</strong> Commissions are credited directly
@@ -184,9 +178,7 @@ We offer a high-reward commission model where you earn from both New Sales and R
           </h2>
 
           <p className="text-gray-700">
-            A minimum of five sales per month is required to remain eligible for
-            full benefits and team commissions. Those who do not meet this
-            requirement will receive only their basic sales commission.
+            A minimum of five sales per month is required to remain eligible for full benefits and team commissions. Those who do not meet this requirement will receive only their sales commission.
           </p>
         </section>
 
