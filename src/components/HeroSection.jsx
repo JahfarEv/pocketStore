@@ -34,13 +34,16 @@ const HeroSection = ({ navigateTo }) => {
             </div>
 
             {/* Join Our Team Button */}
-            <button
-              onClick={() => navigateTo("careers")}
-              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition flex items-center justify-center w-full sm:w-auto"
-            >
-              <FaUsers className="text-xl mr-3" />
-              Grow With Us
-            </button>
+<button
+  onClick={() => navigateTo("careers")}
+  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold px-6 py-3 rounded-lg transition flex items-center justify-center w-full sm:w-auto cursor-pointer"
+>
+  <FaUsers className="text-xl mr-3" />
+  <div className="flex flex-col items-start">
+    <span className="font-bold text-lg drop-shadow-md">Start today,</span>
+    <span className="text-sm font-medium">build your opportunities</span>
+  </div>
+</button>
           </div>
 
           {/* Right Column - Image */}

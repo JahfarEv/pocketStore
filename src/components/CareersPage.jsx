@@ -87,7 +87,7 @@ export default function CareerSalesman() {
               <strong>Yearly Plan:</strong> ₹1100 + GST
               <div className="text-sm text-gray-600">
                 Pay for 11 months and get 14 months for the first subscription.
-                Every subsequent renewal gets 12 months for the price of 11.
+                Every subsequent renewal gets 12 months for the price of 11 months.
               </div>
             </li>
           </ol>
