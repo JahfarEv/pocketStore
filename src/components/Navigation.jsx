@@ -311,43 +311,197 @@
 
 // export default Navigation;
 
-import React from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+// import React from "react";
+// import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navigation = ({ currentPage, navigateTo, isMenuOpen, toggleMenu }) => {
-  // 🔹 Navigate to section (works even from other pages)
+// const Navigation = ({ currentPage, navigateTo, isMenuOpen, toggleMenu }) => {
+//   // 🔹 Navigate to section (works even from other pages)
+//   const goToSection = (id) => {
+//     if (currentPage !== "home") {
+//       navigateTo("home");
+//       setTimeout(() => {
+//         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+//       }, 300);
+//     } else {
+//       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+//     }
+//   };
+
+//   return (
+//     <nav className="bg-indigo-600 shadow-3xl fixed w-full z-50 border-b border-indigo-500">
+//       <div className="max-w-7xl mx-auto px-4">
+//         <div className="flex justify-between h-16 items-center">
+//           {/* Logo */}
+//           <div
+//             onClick={() => navigateTo("home")}
+//             className="text-white font-bold text-5xl font-aparajita cursor-pointer
+//   drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]
+//   animate-[pulse_2s_ease-in-out_infinite]"
+//           >
+//             Poket<span className="text-yellow-200">Stor</span>
+//           </div>
+
+//           {/* Desktop Navigation */}
+//           <div className="hidden md:flex items-center space-x-3">
+//             <NavBtn
+//               label="Home"
+//               active={currentPage === "home"}
+//               onClick={() => navigateTo("home")}
+//             />
+//             <NavBtn label="Features" onClick={() => goToSection("features")} />
+//             <NavBtn
+//               label="How It Works"
+//               onClick={() => goToSection("how-it-works")}
+//             />
+//             <NavBtn
+//               label="For Users"
+//               onClick={() => goToSection("user-types")}
+//             />
+//           </div>
+
+//           {/* Mobile Menu Button */}
+//           <div className="md:hidden">
+//             <button onClick={toggleMenu} className="p-2">
+//               {isMenuOpen ? (
+//                 <FaTimes className="w-6 h-6 text-white" />
+//               ) : (
+//                 <FaBars className="w-6 h-6 text-white" />
+//               )}
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Mobile Menu */}
+//       {isMenuOpen && (
+//         <div className="md:hidden bg-indigo-800 px-4 pt-2 pb-4 space-y-1 text-center">
+//           <MobileBtn
+//             label="Home"
+//             onClick={() => {
+//               navigateTo("home");
+//               toggleMenu();
+//             }}
+//           />
+//           <MobileBtn
+//             label="Features"
+//             onClick={() => {
+//               goToSection("features");
+//               toggleMenu();
+//             }}
+//           />
+//           <MobileBtn
+//             label="How It Works"
+//             onClick={() => {
+//               goToSection("how-it-works");
+//               toggleMenu();
+//             }}
+//           />
+//           <MobileBtn
+//             label="For Users"
+//             onClick={() => {
+//               goToSection("user-types");
+//               toggleMenu();
+//             }}
+//           />
+//           <MobileBtn
+//             label="Careers"
+//             onClick={() => {
+//               navigateTo("careers");
+//               toggleMenu();
+//             }}
+//           />
+//           <MobileBtn
+//             label="Contact"
+//             onClick={() => {
+//               navigateTo("contact");
+//               toggleMenu();
+//             }}
+//           />
+//         </div>
+//       )}
+//     </nav>
+//   );
+// };
+
+// /* 🔹 Reusable Desktop Button */
+// const NavBtn = ({ label, onClick, active }) => (
+//   <button
+//     onClick={onClick}
+//     className={`py-2 px-4 font-medium transition cursor-pointer ${
+//       active
+//         ? "text-white hover:text-yellow-300"
+//         : "text-white hover:text-yellow-300"
+//     }`}
+//   >
+//     {label}
+//   </button>
+// );
+
+// /* 🔹 Reusable Mobile Button */
+// const MobileBtn = ({ label, onClick }) => (
+//   <button
+//     onClick={onClick}
+//     className="block w-full text-center py-3 font-medium text-white hover:text-yellow-300 transition"
+//   >
+//     {label}
+//   </button>
+// );
+
+// export default Navigation;
+
+
+
+
+
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useNavigate, useLocation } from "react-router-dom";
+
+const Navigation = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  /* 🔹 Navigate to route */
+  const goToPage = (path) => {
+    navigate(path);
+    setIsMenuOpen(false);
+    window.scrollTo(0, 0);
+  };
+
+  /* 🔹 Navigate + scroll to section on HOME */
   const goToSection = (id) => {
-    if (currentPage !== "home") {
-      navigateTo("home");
+    if (location.pathname !== "/") {
+      navigate("/");
       setTimeout(() => {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       }, 300);
     } else {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }
+    setIsMenuOpen(false);
   };
 
   return (
-    <nav className="bg-indigo-600 shadow-3xl fixed w-full z-50 border-b border-indigo-500">
+    <nav className="bg-indigo-600 fixed w-full z-50 border-b border-indigo-500 shadow-xl">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
+
+          {/* 🔹 Logo */}
           <div
-            onClick={() => navigateTo("home")}
+            onClick={() => goToPage("/")}
             className="text-white font-bold text-5xl font-aparajita cursor-pointer
-  drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]
-  animate-[pulse_2s_ease-in-out_infinite]"
+              drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]
+              animate-[pulse_2s_ease-in-out_infinite]"
           >
             Poket<span className="text-yellow-200">Stor</span>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* 🔹 Desktop Menu */}
           <div className="hidden md:flex items-center space-x-3">
-            <NavBtn
-              label="Home"
-              active={currentPage === "home"}
-              onClick={() => navigateTo("home")}
-            />
+            <NavBtn label="Home" onClick={() => goToPage("/")} />
             <NavBtn label="Features" onClick={() => goToSection("features")} />
             <NavBtn
               label="How It Works"
@@ -357,9 +511,12 @@ const Navigation = ({ currentPage, navigateTo, isMenuOpen, toggleMenu }) => {
               label="For Users"
               onClick={() => goToSection("user-types")}
             />
+            {/* <NavBtn label="Services" onClick={() => goToPage("/services")} />
+            <NavBtn label="Careers" onClick={() => goToPage("/careers")} />
+            <NavBtn label="Contact" onClick={() => goToPage("/contact")} /> */}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* 🔹 Mobile Toggle */}
           <div className="md:hidden">
             <button onClick={toggleMenu} className="p-2">
               {isMenuOpen ? (
@@ -372,76 +529,43 @@ const Navigation = ({ currentPage, navigateTo, isMenuOpen, toggleMenu }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* 🔹 Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-indigo-800 px-4 pt-2 pb-4 space-y-1 text-center">
-          <MobileBtn
-            label="Home"
-            onClick={() => {
-              navigateTo("home");
-              toggleMenu();
-            }}
-          />
-          <MobileBtn
-            label="Features"
-            onClick={() => {
-              goToSection("features");
-              toggleMenu();
-            }}
-          />
+          <MobileBtn label="Home" onClick={() => goToPage("/")} />
+          <MobileBtn label="Features" onClick={() => goToSection("features")} />
           <MobileBtn
             label="How It Works"
-            onClick={() => {
-              goToSection("how-it-works");
-              toggleMenu();
-            }}
+            onClick={() => goToSection("how-it-works")}
           />
           <MobileBtn
             label="For Users"
-            onClick={() => {
-              goToSection("user-types");
-              toggleMenu();
-            }}
+            onClick={() => goToSection("user-types")}
           />
-          <MobileBtn
-            label="Careers"
-            onClick={() => {
-              navigateTo("careers");
-              toggleMenu();
-            }}
-          />
-          <MobileBtn
-            label="Contact"
-            onClick={() => {
-              navigateTo("contact");
-              toggleMenu();
-            }}
-          />
+          {/* <MobileBtn label="Services" onClick={() => goToPage("/services")} />
+          <MobileBtn label="Careers" onClick={() => goToPage("/careers")} />
+          <MobileBtn label="Contact" onClick={() => goToPage("/contact")} /> */}
         </div>
       )}
     </nav>
   );
 };
 
-/* 🔹 Reusable Desktop Button */
-const NavBtn = ({ label, onClick, active }) => (
+/* 🔹 Desktop Button */
+const NavBtn = ({ label, onClick }) => (
   <button
     onClick={onClick}
-    className={`py-2 px-4 font-medium transition cursor-pointer ${
-      active
-        ? "text-white hover:text-yellow-300"
-        : "text-white hover:text-yellow-300"
-    }`}
+    className="py-2 px-4 font-medium text-white hover:text-yellow-300 transition"
   >
     {label}
   </button>
 );
 
-/* 🔹 Reusable Mobile Button */
+/* 🔹 Mobile Button */
 const MobileBtn = ({ label, onClick }) => (
   <button
     onClick={onClick}
-    className="block w-full text-center py-3 font-medium text-white hover:text-yellow-300 transition"
+    className="block w-full py-3 font-medium text-white hover:text-yellow-300 transition"
   >
     {label}
   </button>
