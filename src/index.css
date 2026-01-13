@@ -27,3 +27,13 @@
 .shadow-3xl {
   box-shadow: 0 25px 50px -12px rgba(147, 51, 234, 0.35);
 }
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
