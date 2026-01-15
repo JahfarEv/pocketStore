@@ -87,7 +87,8 @@ export default function CareerSalesman() {
               <strong>Yearly Plan:</strong> ₹1100 + GST
               <div className="text-sm text-gray-600">
                 Pay for 11 months and get 14 months for the first subscription.
-                Every subsequent renewal gets 12 months for the price of 11 months.
+                Every subsequent renewal gets 12 months for the price of 11
+                months.
               </div>
             </li>
           </ol>
@@ -98,8 +99,9 @@ export default function CareerSalesman() {
           <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
             Earning Potential (Commission Structure)
           </h2>
-          We offer a high-reward commission model where you earn from both New
-          Sales and Renewals.
+          We offer a high-return commission model where you earn revenue from
+          both new sales and renewals. In all cases, the first month is
+          considered a sale, and subsequent months are considered renewals.
           {/* Sales Executive */}
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-blue-700">
@@ -118,7 +120,7 @@ export default function CareerSalesman() {
               <div>
                 <p className="font-medium">Yearly Plan</p>
                 <ul className="list-disc list-inside ml-4">
-                  <li>New Installation: 40% + 10 * 20%</li>
+                  <li>New Installation: 40% </li>
                   <li>Yearly Renewal: 20%</li>
                 </ul>
               </div>
