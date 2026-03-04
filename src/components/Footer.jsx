@@ -220,7 +220,7 @@ const Footer = ({ navigateTo }) => {
               <li><a href="#" className="text-gray-400 hover:text-white transition">Help Center</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition">FAQs</a></li>
               <li>
-                <button onClick={() => navigateTo("contact")} className="text-gray-400 hover:text-white transition">
+                <button onClick={() => navigate("/contact")} className="text-gray-400 hover:text-white transition">
                   Contact Us
                 </button>
               </li>

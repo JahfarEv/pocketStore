@@ -64,7 +64,7 @@ const ContactPage = ({ navigateTo }) => {
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       {/* Contact Header */}
-      <section className="py-12">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-indigo-600 py-5">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
           <p className="text-xl text-white opacity-90 max-w-3xl mx-auto">

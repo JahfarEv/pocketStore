@@ -36,10 +36,13 @@ import AboutUs from "./components/AboutUs";
 import ServicesPage from "./components/SoftwareServicesPage";
 import ContactPage from "./components/ContactPage";
 import CareerPage from "./components/CareersPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+          <ScrollToTop />
+
       <Routes>
         {/* Layout wrapper */}
         <Route element={<Layout />}>

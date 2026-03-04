@@ -15,8 +15,8 @@ export default function CareerSalesman() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/agreement/PoketStor Career.pdf";
-    link.download = "PoketStor Career.pdf";
+    link.href = "/agreement/PoketStor Job.pdf";
+    link.download = "PoketStor Job.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -71,111 +71,139 @@ export default function CareerSalesman() {
         </section>
 
         {/* Subscription Plans */}
-        <section className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
-            Subscription Plans & Offers
-          </h2>
+    {/* PoketStor Opportunity */}
+<section className="space-y-6">
+  <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+    What is PoketStor? How to Earn a Monthly Stable Income of ₹40,000+
+  </h2>
 
-          <ol className="list-decimal list-inside space-y-3 text-gray-700">
-            <li>
-              <strong>Monthly Plan:</strong> ₹100 + GST
-              <div className="text-sm text-gray-600">
-                Special Offer: Get 3 months for the first subscription
-              </div>
-            </li>
-            <li>
-              <strong>Yearly Plan:</strong> ₹1100 + GST
-              <div className="text-sm text-gray-600">
-                Pay for 11 months and get 14 months for the first subscription.
-                Every subsequent renewal gets 12 months for the price of 11
-                months.
-              </div>
-            </li>
-          </ol>
-        </section>
+  <p className="text-gray-700 leading-relaxed">
+    <span className="font-bold">PoketStor</span> is a cutting-edge mobile
+    application designed to bridge the gap between local merchants and
+    neighborhood customers. It empowers small business owners and service
+    providers to list their shops and products online, allowing them to compete
+    in the digital marketplace.
+  </p>
 
-        {/* Commission Structure */}
-        <section className="space-y-6">
-          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
-            Earning Potential (Commission Structure)
-          </h2>
-          We offer a high-return commission model where you earn revenue from
-          both new sales and renewals. In all cases, the first month is
-          considered a sale, and subsequent months are considered renewals.
-          {/* Sales Executive */}
-          <div className="space-y-3">
-            <h3 className="text-lg font-semibold text-blue-700">
-              Sales Executive Commission
-            </h3>
+  <p className="text-gray-700 leading-relaxed">
+    Customers can easily find nearby stores based on their live location or
+    PIN code and place orders instantly.
+  </p>
+</section>
 
-            <div className="pl-4 space-y-3 text-gray-700">
-              <div>
-                <p className="font-medium">Monthly Plan</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>New Installation: 40%</li>
-                  <li>Monthly Renewal: 20%</li>
-                </ul>
-              </div>
+{/* Entry Offers */}
+<section className="space-y-4">
+  <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+    Attractive Entry Offers
+  </h2>
 
-              <div>
-                <p className="font-medium">Yearly Plan</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>New Installation: 40% </li>
-                  <li>Yearly Renewal: 20%</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {/* Sales Manager */}
-          <div className="space-y-3">
-            <h3 className="text-lg font-semibold text-blue-700">
-              Sales Manager Commission (Promotion Based)
-            </h3>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>
+      Merchants get <strong>3 months for the price of 1</strong> on their first
+      monthly subscription.
+    </li>
+    <li>
+      Merchants get <strong>14 months for the price of 11</strong> on the first
+      yearly plan.
+    </li>
+  </ul>
+</section>
 
-            <p className="text-gray-700">
-              High-performing Sales Executives will be promoted to Sales
-              Managers. Managers can build their own team across India.
-            </p>
+{/* Financial Growth */}
+<section className="space-y-4">
+  <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+    Achieving Financial Growth
+  </h2>
 
-            <ul className="list-disc list-inside ml-4 text-gray-700 space-y-2">
-              <li>Direct Sales: Same commission as Sales Executives</li>
-              <li>
-                <strong>Team Performance (Override Commission):</strong>
-                <ul className="list-disc list-inside ml-6 mt-1">
-                  <li>Monthly Plan: 10% per new sale | 5% per renewal</li>
-                  <li>Yearly Plan: 10% per new sale | 5% per renewal</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <p className="text-gray-700 leading-relaxed">
+    By joining PoketStor as a Sales Executive, you aren't just getting a job;
+    you are building a recurring revenue stream. The platform uses an
+    <strong> Exponential Income Model</strong> where your efforts today pay off
+    for months and years to come.
+  </p>
 
-        {/* Why Join */}
-        <section className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
-            Why Join PocketStor?
-          </h2>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>
+      <strong>The Power of Renewals:</strong> Unlike traditional sales where you
+      only earn once, PoketStor pays you every time a merchant renews their
+      subscription.
+    </li>
+    <li>
+      <strong>Unlimited Growth:</strong> As your network of shops grows, your
+      monthly "pension-like" commission increases.
+    </li>
+    <li>
+      By scaling your efforts or becoming a Manager, earning
+      <strong> lakhs of rupees per month</strong> becomes achievable.
+    </li>
+  </ul>
+</section>
 
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>
-              <strong>Exponential Income:</strong> With your skills, sincerity,
-              and a dignified work ethic, you can achieve remarkable growth in
-              your income within a few months. By simply marketing the PoketStor
-              application, it's possible to earn lakhs of rupees per month. For
-              instance, if you're an executive who has sold just 4000 monthly
-              plans in six months, you'll receive a renewal commission of Rs.
-              80,000 per month, not to mention the commission from the sales you
-              made during that month. As shops renew every month and your sales
-              continue to grow, your commission will keep increasing. With
-              annual plans, you'll receive an even larger commission every
-              month.
-            </li>
-            <li>
-              <strong>Transparency:</strong> Commissions are credited directly
-              to your bank account by the 5th of every month.
-            </li>
-          </ul>
-        </section>
+{/* Responsibilities */}
+<section className="space-y-4">
+  <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+    Your Responsibilities
+  </h2>
+
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>
+      <strong>Merchant Onboarding:</strong> Identify and visit local service
+      centers, shops, and businesses (groceries, electronics, textiles, etc.)
+      and explain the benefits of going digital with PoketStor.
+    </li>
+    <li>
+      <strong>App Installation:</strong> Help merchants install the PoketStor
+      application and set up their business listing.
+    </li>
+    <li>
+      <strong>Subscription Sales:</strong> Convert leads into active users by
+      selling Monthly or Yearly subscription plans.
+    </li>
+    <li>
+      <strong>Relationship Management:</strong> Ensure merchants understand how
+      to manage orders and deliveries to maintain high renewal rates.
+    </li>
+  </ul>
+</section>
+
+{/* Commission & Promotion */}
+<section className="space-y-4">
+  <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+    Commission Structure
+  </h2>
+
+  <p className="text-gray-700">
+    We offer one of the most competitive commission models in the industry,
+    rewarding both initial hard work and long-term consistency.
+  </p>
+
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>
+      <strong>Recurring Commission:</strong> Earn income every time a merchant
+      renews their subscription.
+    </li>
+    <li>
+      <strong>Promotion to Sales Manager:</strong> High-performing executives
+      can lead their own teams across India.
+    </li>
+    <li>
+      Managers earn their direct sales commission plus renewal commission on
+      their entire team's performance.
+    </li>
+  </ul>
+</section>
+
+{/* Payout */}
+<section className="space-y-4">
+  <h2 className="text-xl font-semibold text-gray-800 border-b pb-2">
+    Transparent Payouts
+  </h2>
+
+  <p className="text-gray-700">
+    All earned commissions are credited directly to your registered bank
+    account by the <strong>5th of every month</strong>.
+  </p>
+</section>
 
         {/* Terms */}
         <section className="space-y-3">

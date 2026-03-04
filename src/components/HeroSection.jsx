@@ -80,8 +80,8 @@ const HeroSection = ({ navigateTo }) => {
                 >
                   <FaUsers className="text-xl mr-3" />
                   <div className="flex flex-col items-start">
-                    <span className="font-bold text-lg drop-shadow-md">
-                      Start today,
+                    <span className="font-bold text-2xl drop-shadow-md">
+                      Career,
                     </span>
                     <span className="text-sm font-medium">
                       build your opportunities
