@@ -206,7 +206,7 @@ export default function CareerSalesman() {
 </section>
 
         {/* Terms */}
-        <section className="space-y-3">
+        {/* <section className="space-y-3">
           <h2 className="text-xl font-semibold text-gray-800 border-b pb-2 ">
             Terms & Conditions
           </h2>
@@ -216,27 +216,26 @@ export default function CareerSalesman() {
             full benefits and team commissions. Those who do not meet this
             requirement will receive only their sales commission.
           </p>
-        </section>
+        </section> */}
 
-        {/* Agreement Checkbox */}
-        <section className="border rounded-lg p-4 bg-gray-50">
-          <h2 className="text-lg font-semibold text-gray-800 mb-2">
-            Sales Executive Agreement
-          </h2>
+     <section className="border rounded-lg p-4 bg-gray-50">
+  <h2 className="text-lg font-semibold text-gray-800 mb-2">
+    Application Confirmation
+  </h2>
 
-          <div className="flex items-center gap-2">
-            <input
-              type="checkbox"
-              id="agree"
-              checked={agreed}
-              onChange={(e) => setAgreed(e.target.checked)}
-              className="w-4 h-4"
-            />
-            <label htmlFor="agree" className="text-gray-700 text-sm">
-              I have read and agree to the Sales Executive Agreement
-            </label>
-          </div>
-        </section>
+  <div className="flex items-center gap-2">
+    <input
+      type="checkbox"
+      id="agree"
+      checked={agreed}
+      onChange={(e) => setAgreed(e.target.checked)}
+      className="w-4 h-4"
+    />
+    <label htmlFor="agree" className="text-gray-700 text-sm">
+      I have read the information above and I am interested in applying as a Sales Executive at PoketStor.
+    </label>
+  </div>
+</section>
 
         {/* Interested Button */}
         <div className="text-center">
