@@ -170,6 +170,209 @@
 // export default TermsAndConditions;
 
 
+
+
+
+
+
+
+
+
+
+// import React from "react";
+
+// const TermsAndConditions = () => {
+//   return (
+//     <div className="min-h-screen bg-white text-gray-800 px-6 py-10 md:px-12">
+//       <div className="max-w-5xl mx-auto space-y-6">
+
+//         {/* Title */}
+//         <h1 className="text-3xl font-bold text-blue-700 underline underline-offset-4 text-center">
+//           Terms and Conditions
+//         </h1>
+
+//         <p className="text-sm text-gray-500 text-center">
+//           Last Updated: January 7, 2026
+//         </p>
+
+//         <p>
+//           Welcome to PoketStor. These Terms and Conditions govern the use of the
+//           PoketStor mobile application, owned and operated by{" "}
+//           <strong>Nexus Ventures LLC</strong>.
+//         </p>
+
+//         <p>
+//           By accessing or using this application, you agree to be bound by these
+//           Terms and Conditions. If you do not agree, please do not use PoketStor.
+//         </p>
+
+//         {/* 1 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">1. Definitions</h2>
+//         <ul className="list-disc pl-6">
+//           <li><strong>App:</strong> PoketStor</li>
+//           <li><strong>Company:</strong> Nexus Ventures LLC</li>
+//           <li><strong>Users:</strong> Individuals browsing or purchasing via the app</li>
+//           <li><strong>Shops / Merchants:</strong> Businesses registered to list products</li>
+//         </ul>
+
+//         {/* 2 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">2. Services Provided</h2>
+//         <ul className="list-disc pl-6">
+//           <li>PoketStor connects local shops with customers</li>
+//           <li>Shops may list their location, images, and product prices</li>
+//           <li>Users may browse nearby shops and view product details</li>
+//         </ul>
+
+//         {/* 3 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           3. Subscription and Fees (For Shops)
+//         </h2>
+//         <ul className="list-disc pl-6">
+//           <li>Registered shops must pay subscription and renewal fees</li>
+//           <li>All fees are inclusive of applicable taxes</li>
+//           <li>Subscription fees are generally non-refundable unless stated otherwise</li>
+//           <li>The app is free for general users/customers</li>
+//         </ul>
+
+//         {/* 4 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           4. Transactions and Payments
+//         </h2>
+//         <p>
+//           PoketStor is not a payment intermediary for product purchases. All
+//           payments for goods or services are made directly between the customer
+//           and the shop owner.
+//         </p>
+//         <p>
+//           Nexus Ventures LLC is not responsible for disputes, failed payments,
+//           refunds, or product quality issues between buyers and merchants.
+//         </p>
+
+//         {/* 5 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           5. Content Accuracy
+//         </h2>
+//         <p>
+//           Shops are responsible for the accuracy of their shop details, product
+//           images, pricing, and location information.
+//         </p>
+//         <p>
+//           Nexus Ventures LLC does not guarantee availability, quality, or
+//           accuracy of products listed by independent merchants.
+//         </p>
+
+//         {/* 6 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           6. User Conduct & Data
+//         </h2>
+//         <p>
+//           <strong>Location Access:</strong> By using the app, you consent to
+//           PoketStor collecting location data to enable nearby search and local
+//           discovery features.
+//         </p>
+//         <p>
+//           <strong>Account Security:</strong> Users are responsible for keeping
+//           their account credentials secure.
+//         </p>
+//         <p>
+//           <strong>Privacy:</strong> Data collection and use are governed by our
+//           Privacy Policy. We do not sell personal data.
+//         </p>
+
+//         {/* 7 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           7. Intellectual Property
+//         </h2>
+//         <p>
+//           Unless otherwise stated, all intellectual property rights related to
+//           PoketStor belong to Nexus Ventures LLC. Unauthorized use is prohibited.
+//         </p>
+
+//         {/* 8 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           8. Limitation of Liability
+//         </h2>
+//         <p>
+//           PoketStor is provided on an &quot;as is&quot; basis. Nexus Ventures LLC
+//           shall not be liable for indirect, incidental, consequential, or
+//           special damages arising from use of the app.
+//         </p>
+
+//         {/* 9 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           9. Termination
+//         </h2>
+//         <p>
+//           We reserve the right to suspend or terminate access to the app without
+//           prior notice if these Terms are violated or if use is harmful to the
+//           platform or other users.
+//         </p>
+
+//         {/* 10 */}
+//         <h2 className="text-xl font-bold mt-6 text-center">
+//           10. Contact Information
+//         </h2>
+//         <p>
+//           If you have questions about these Terms and Conditions, contact us at:
+//         </p>
+// <h2 className="text-xl font-bold mt-6 text-center">
+//   11. Rewards & Incentive Program
+// </h2>
+
+// <p>
+//   PoketStor may offer a reward-based incentive program for both users and registered shops.
+//   Participation in this program is optional and subject to the following conditions:
+// </p>
+
+// <ul className="list-disc pl-6 space-y-2">
+//   <li>
+//     <strong>Order-Based Rewards:</strong> Users may earn reward points based on each successful order or interaction with shops listed on the platform.
+//   </li>
+
+//   <li>
+//     <strong>Shop Participation:</strong> Shops may also receive benefits or visibility based on customer engagement and order volume.
+//   </li>
+
+//   <li>
+//     <strong>Point Accumulation:</strong> Reward points are accumulated over time and may be used for eligible gift offers or promotional benefits as defined by PoketStor.
+//   </li>
+
+//   <li>
+//     <strong>Target-Based Gifts:</strong> Users who achieve specific reward point targets may qualify for special gifts or offers. These targets may vary by category, campaign, or promotional period.
+//   </li>
+
+//   <li>
+//     <strong>Lucky Draw / Chitty System:</strong> In certain campaigns, PoketStor may select one or more users as winners within a category after reaching defined targets. This selection process is promotional in nature and may resemble a “chitty” or lucky draw system.
+//   </li>
+
+//   <li>
+//     <strong>Fair Usage:</strong> Any misuse, fraud, or manipulation of the reward system may result in disqualification and suspension of rewards or account access.
+//   </li>
+
+//   <li>
+//     <strong>Modification Rights:</strong> PoketStor reserves the right to modify, suspend, or terminate the reward program, including point structures, eligibility, and benefits, at any time without prior notice.
+//   </li>
+// </ul>
+//         <p>
+//           📧 Email:{" "}
+//           <a
+//             href="mailto:support@poketstor.com"
+//             className="text-blue-600 underline"
+//           >
+//             support@poketstor.com
+//           </a>
+//         </p>
+
+//         <p>🏢 Company: Nexus Ventures LLC</p>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default TermsAndConditions;
+
+
 import React from "react";
 
 const TermsAndConditions = () => {
@@ -218,11 +421,31 @@ const TermsAndConditions = () => {
         <h2 className="text-xl font-bold mt-6 text-center">
           3. Subscription and Fees (For Shops)
         </h2>
-        <ul className="list-disc pl-6">
-          <li>Registered shops must pay subscription and renewal fees</li>
-          <li>All fees are inclusive of applicable taxes</li>
-          <li>Subscription fees are generally non-refundable unless stated otherwise</li>
-          <li>The app is free for general users/customers</li>
+
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Registered shops must pay applicable subscription and renewal fees to access platform features.</li>
+
+          <li>All subscription fees are inclusive of applicable taxes and are non-refundable unless explicitly stated otherwise.</li>
+
+          <li>
+            <strong>Plan Change Policy:</strong> If a shop upgrades or changes its subscription plan, the previously active plan will be immediately suspended. All features, limits, and benefits of the previous plan will no longer be accessible after the change.
+          </li>
+
+          <li>
+            <strong>New Plan Activation:</strong> Features and benefits of the newly selected subscription plan will only be activated after the plan change is successfully completed and confirmed.
+          </li>
+
+          <li>
+            <strong>Product Listing Limits:</strong> Shops are allowed to list products strictly based on the limits defined in their current subscription plan. Any attempt to exceed the allowed product limit may result in restrictions or removal of excess listings.
+          </li>
+
+          {/* <li>
+            <strong>Plan Downgrade Impact:</strong> If a shop downgrades to a lower plan, product listings exceeding the new plan limit may be restricted, hidden, or required to be removed.
+          </li> */}
+
+          {/* <li>The platform reserves the right to modify subscription plans, pricing, and features at any time without prior notice.</li> */}
+
+          <li>The application remains free for general users/customers.</li>
         </ul>
 
         {/* 4 */}
@@ -284,7 +507,7 @@ const TermsAndConditions = () => {
           8. Limitation of Liability
         </h2>
         <p>
-          PoketStor is provided on an &quot;as is&quot; basis. Nexus Ventures LLC
+          PoketStor is provided on an "as is" basis. Nexus Ventures LLC
           shall not be liable for indirect, incidental, consequential, or
           special damages arising from use of the app.
         </p>
@@ -307,12 +530,35 @@ const TermsAndConditions = () => {
           If you have questions about these Terms and Conditions, contact us at:
         </p>
 
+        {/* 11 */}
+        <h2 className="text-xl font-bold mt-6 text-center">
+          11. Rewards & Incentive Program
+        </h2>
+
+        <p>
+          PoketStor may offer a reward-based incentive program for both users and registered shops.
+          Participation in this program is optional and subject to the following conditions:
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2">
+          <li><strong>Order-Based Rewards:</strong> Users may earn reward points based on each successful order or interaction with shops listed on the platform.</li>
+
+          <li><strong>Shop Participation:</strong> Shops may also receive benefits or visibility based on customer engagement and order volume.</li>
+
+          <li><strong>Point Accumulation:</strong> Reward points are accumulated over time and may be used for eligible gift offers or promotional benefits as defined by PoketStor.</li>
+
+          <li><strong>Target-Based Gifts:</strong> Users who achieve specific reward point targets may qualify for special gifts or offers.</li>
+
+          <li><strong>Lucky Draw:</strong> In certain campaigns, PoketStor may select one or more users as winners within a category after reaching defined targets.</li>
+
+          <li><strong>Fair Usage:</strong> Any misuse, fraud, or manipulation of the reward system may result in disqualification.</li>
+
+          <li><strong>Modification Rights:</strong> PoketStor reserves the right to modify or terminate the reward program at any time.</li>
+        </ul>
+
         <p>
           📧 Email:{" "}
-          <a
-            href="mailto:support@poketstor.com"
-            className="text-blue-600 underline"
-          >
+          <a href="mailto:support@poketstor.com" className="text-blue-600 underline">
             support@poketstor.com
           </a>
         </p>
@@ -325,3 +571,4 @@ const TermsAndConditions = () => {
 };
 
 export default TermsAndConditions;
+
