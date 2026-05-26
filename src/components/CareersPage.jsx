@@ -15,8 +15,8 @@ export default function CareerSalesman() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/agreement/career-form.pdf";
-    link.download = "PoketStor Job.pdf";
+    link.href = "/agreement/Nexus_Ventures_Official_Form.pdf";
+    link.download = "Nexus_Ventures_Official_Form.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
