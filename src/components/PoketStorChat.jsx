@@ -1,6 +1,3 @@
-
-
-
 // import React, { useState, useEffect, useRef } from "react";
 // import {
 //   MessageSquare,
@@ -366,9 +363,6 @@
 //   );
 // }
 
-
-
-
 import React, { useState, useEffect, useRef } from "react";
 import {
   MessageSquare,
@@ -378,12 +372,12 @@ import {
   Download,
   Mic,
   MicOff,
-  Globe
+  Globe,
 } from "lucide-react";
 
 const INITIAL_MESSAGE = {
   id: 1,
-  text: "Hi! I'm your PoketStor Assistant. Looking for any shops or products today?",
+  text: "Hi! I'm your PoketStor assistant. How can I help you today?",
   sender: "bot",
   showAppButton: false,
   buttonText: "",
@@ -395,7 +389,7 @@ const LANGUAGES = [
   { code: "en-US", label: "English" },
   { code: "ml-IN", label: "മലയാളം" },
   { code: "ta-IN", label: "தமிழ்" },
-  { code: "hi-IN", label: "हिन्दी" }
+  { code: "hi-IN", label: "हिन्दी" },
 ];
 
 export default function PoketStorChat() {
@@ -681,7 +675,8 @@ export default function PoketStorChat() {
                     <span className="w-2 h-2 bg-red-400 rounded-full animate-pulse delay-150"></span>
                   </div>
                   <span className="text-sm text-red-600 font-medium">
-                    Listening ({LANGUAGES.find(l => l.code === selectedLang)?.label})...
+                    Listening (
+                    {LANGUAGES.find((l) => l.code === selectedLang)?.label})...
                   </span>
                 </div>
               </div>
@@ -693,7 +688,7 @@ export default function PoketStorChat() {
           {/* Footer (Includes Language drop-down and inputs) */}
           <div className="border-t bg-white flex flex-col shrink-0">
             {/* Language Selection Row */}
-            <div className="px-3 pt-2 pb-1 flex items-center justify-end gap-1.5 border-b border-gray-100">
+            <div className="px-3 pt-2 pb-1 flex items-center justify-start gap-1.5 border-b border-gray-100">
               <Globe className="w-3.5 h-3.5 text-gray-400" />
               <select
                 value={selectedLang}
@@ -737,7 +732,9 @@ export default function PoketStorChat() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder={
-                  isListening ? "Listening..." : "Ask anything about PoketStor..."
+                  isListening
+                    ? "Listening..."
+                    : "Ask anything about PoketStor..."
                 }
                 className="flex-1 min-w-0 bg-gray-100 rounded-xl px-4 py-2 outline-none focus:ring-2 focus:ring-indigo-500"
                 disabled={isListening}
