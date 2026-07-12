@@ -373,6 +373,7 @@ import {
   Mic,
   MicOff,
   Globe,
+  ChevronDown,
 } from "lucide-react";
 
 const INITIAL_MESSAGE = {
@@ -688,7 +689,7 @@ export default function PoketStorChat() {
           {/* Footer (Includes Language drop-down and inputs) */}
           <div className="border-t bg-white flex flex-col shrink-0">
             {/* Language Selection Row */}
-            <div className="px-3 pt-2 pb-1 flex items-center justify-start gap-1.5 border-b border-gray-100">
+            {/* <div className="px-3 pt-2 pb-1 flex items-center justify-start gap-1.5 border-b border-gray-100">
               <Globe className="w-3.5 h-3.5 text-gray-400" />
               <select
                 value={selectedLang}
@@ -702,6 +703,29 @@ export default function PoketStorChat() {
                   </option>
                 ))}
               </select>
+            </div> */}
+
+            <div className="px-3 pt-2 pb-1 flex items-center gap-1.5 border-b border-gray-100">
+              <div className="relative">
+                <select
+                  value={selectedLang}
+                  onChange={(e) => setSelectedLang(e.target.value)}
+                  disabled={isListening}
+                  className="appearance-none w-6 bg-transparent border-0 outline-none focus:ring-0 text-transparent cursor-pointer pr-4 "
+                >
+                  {LANGUAGES.map((lang) => (
+                    <option
+                      key={lang.code}
+                      value={lang.code}
+                      className="text-black"
+                    >
+                      {lang.label}
+                    </option>
+                  ))}
+                </select>
+
+                <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+              </div>
             </div>
 
             <form

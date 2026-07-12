@@ -186,7 +186,7 @@ const HeroSection = ({ navigateTo }) => {
             <div className="bg-white rounded-2xl shadow-2xl p-4 transform rotate-3">
               <div className="bg-gray-200 rounded-xl flex items-center justify-center">
                 <img
-                  src="/aa2.png"
+                  src="/Poket.png"
                   alt="Pocket Store App"
                   className="rounded-xl object-cover"
                 />
