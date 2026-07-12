@@ -604,7 +604,7 @@ export default function PoketStorChat() {
       )}
 
       {isOpen && (
-        <div className="fixed inset-0 sm:inset-auto sm:bottom-6 sm:right-6 z-50 bg-white w-full sm:w-[400px] h-[100dvh] sm:h-[550px] rounded-none sm:rounded-2xl shadow-2xl border-0 sm:border flex flex-col overflow-hidden">
+        <div className="fixed inset-0 sm:inset-auto sm:bottom-6 sm:right-6 z-50 bg-white w-full sm:w-[400px] h-[100dvh] sm:h-[550px] rounded-none sm:rounded-2xl shadow-2xl  flex flex-col overflow-hidden">
           {/* Header */}
           <div
             className="bg-indigo-600 text-white px-4 py-4 flex items-center justify-between shrink-0"
@@ -687,7 +687,7 @@ export default function PoketStorChat() {
           </div>
 
           {/* Footer (Includes Language drop-down and inputs) */}
-          <div className="border-t bg-white flex flex-col shrink-0">
+          <div className="border-t border-gray-200 bg-white flex flex-col shrink-0">
             {/* Language Selection Row */}
             {/* <div className="px-3 pt-2 pb-1 flex items-center justify-start gap-1.5 border-b border-gray-100">
               <Globe className="w-3.5 h-3.5 text-gray-400" />
@@ -711,13 +711,13 @@ export default function PoketStorChat() {
                   value={selectedLang}
                   onChange={(e) => setSelectedLang(e.target.value)}
                   disabled={isListening}
-                  className="appearance-none w-6 bg-transparent border-0 outline-none focus:ring-0 text-transparent cursor-pointer pr-4 "
+                  className="appearance-none w-5 bg-transparent border-0 outline-none focus:ring-0 text-transparent cursor-pointer pr-4 "
                 >
                   {LANGUAGES.map((lang) => (
                     <option
                       key={lang.code}
                       value={lang.code}
-                      className="text-black"
+                      className="text-gray-500 "
                     >
                       {lang.label}
                     </option>
